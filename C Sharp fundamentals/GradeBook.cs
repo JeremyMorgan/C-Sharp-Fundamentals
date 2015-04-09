@@ -42,6 +42,8 @@ namespace C_Sharp_fundamentals
 
         }
 
+        public string Name; 
+
         public List<float> grades;
     }
 }

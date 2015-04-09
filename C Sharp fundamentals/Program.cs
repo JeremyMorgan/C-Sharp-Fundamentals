@@ -9,9 +9,31 @@ namespace C_Sharp_fundamentals
 {
     class Program
     {
+
+        static void GiveBookAName(GradeBook book)
+        {
+            book.Name = "The GradeBook";
+        }
+
         static void Main(string[] args)
         {
+
+            GradeBook g1 = new GradeBook();
+            GradeBook g2 = g1;
+
+            GiveBookAName(g1);
+
+            Console.WriteLine(g2.Name);
             
+            
+            int x1 = 4;
+            int x2 = x1;
+
+            x1 = 100;
+
+            Console.WriteLine("value of x " + x2);
+
+            /*
             GradeBook book = new GradeBook();
 
             book.AddGrade(91);
@@ -25,6 +47,7 @@ namespace C_Sharp_fundamentals
             Console.WriteLine("Lowest Grade: " + stats.LowestGrade);
             Console.WriteLine("Highest Grade: " + stats.HighestGrade);
 
+            */
 
             Console.ReadLine();
 
@@ -32,6 +55,6 @@ namespace C_Sharp_fundamentals
         }
     }
 
-    
+
 
 }
