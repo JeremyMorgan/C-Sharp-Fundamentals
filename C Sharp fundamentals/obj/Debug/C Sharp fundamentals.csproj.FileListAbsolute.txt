@@ -1,0 +1,6 @@
+c:\users\jeremy\documents\visual studio 2013\Projects\C Sharp fundamentals\C Sharp fundamentals\bin\Debug\C Sharp fundamentals.exe.config
+c:\users\jeremy\documents\visual studio 2013\Projects\C Sharp fundamentals\C Sharp fundamentals\bin\Debug\C Sharp fundamentals.exe
+c:\users\jeremy\documents\visual studio 2013\Projects\C Sharp fundamentals\C Sharp fundamentals\bin\Debug\C Sharp fundamentals.pdb
+c:\users\jeremy\documents\visual studio 2013\Projects\C Sharp fundamentals\C Sharp fundamentals\obj\Debug\C Sharp fundamentals.exe
+c:\users\jeremy\documents\visual studio 2013\Projects\C Sharp fundamentals\C Sharp fundamentals\obj\Debug\C Sharp fundamentals.pdb
+c:\users\jeremy\documents\visual studio 2013\Projects\C Sharp fundamentals\C Sharp fundamentals\obj\Debug\C Sharp fundamentals.csprojResolveAssemblyReference.cache
