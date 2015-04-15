@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace C_Sharp_fundamentals
 {
-    class GradeBook
+    public class GradeBook
     {
         public static float MinimumGrade = 0;
         public static float MaximumGrade = 100;
@@ -12,7 +12,7 @@ namespace C_Sharp_fundamentals
         {
             grades = new List<float>();
         }
-
+        
         public void AddGrade(float grade)
         {
             grades.Add(grade);

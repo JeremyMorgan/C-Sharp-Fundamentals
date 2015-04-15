@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace C_Sharp_fundamentals
 {
-    class GradeStatistics
+    public class GradeStatistics
     {
 
         public float AverageGrade;

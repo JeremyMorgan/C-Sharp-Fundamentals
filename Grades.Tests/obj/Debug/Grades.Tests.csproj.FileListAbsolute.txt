@@ -1,0 +1,7 @@
+C:\Users\Jeremy\documents\visual studio 2013\Projects\C Sharp fundamentals\Grades.Tests\bin\Debug\Grades.Tests.dll
+C:\Users\Jeremy\documents\visual studio 2013\Projects\C Sharp fundamentals\Grades.Tests\bin\Debug\Grades.Tests.pdb
+C:\Users\Jeremy\documents\visual studio 2013\Projects\C Sharp fundamentals\Grades.Tests\obj\Debug\Grades.Tests.csprojResolveAssemblyReference.cache
+C:\Users\Jeremy\documents\visual studio 2013\Projects\C Sharp fundamentals\Grades.Tests\obj\Debug\Grades.Tests.dll
+C:\Users\Jeremy\documents\visual studio 2013\Projects\C Sharp fundamentals\Grades.Tests\obj\Debug\Grades.Tests.pdb
+C:\Users\Jeremy\documents\visual studio 2013\Projects\C Sharp fundamentals\Grades.Tests\bin\Debug\C Sharp fundamentals.exe
+C:\Users\Jeremy\documents\visual studio 2013\Projects\C Sharp fundamentals\Grades.Tests\bin\Debug\C Sharp fundamentals.pdb

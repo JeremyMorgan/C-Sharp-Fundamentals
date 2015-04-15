@@ -5,6 +5,8 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "C Sharp fundamentals", "C Sharp fundamentals\C Sharp fundamentals.csproj", "{FB02AA22-54D1-4B71-929B-BCC0CB15FFA6}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Grades.Tests", "Grades.Tests\Grades.Tests.csproj", "{E6FF4ADB-03BD-41C1-A078-B1B0499AC6F9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{FB02AA22-54D1-4B71-929B-BCC0CB15FFA6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB02AA22-54D1-4B71-929B-BCC0CB15FFA6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB02AA22-54D1-4B71-929B-BCC0CB15FFA6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6FF4ADB-03BD-41C1-A078-B1B0499AC6F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6FF4ADB-03BD-41C1-A078-B1B0499AC6F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6FF4ADB-03BD-41C1-A078-B1B0499AC6F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6FF4ADB-03BD-41C1-A078-B1B0499AC6F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
