@@ -7,9 +7,29 @@ namespace C_Sharp_fundamentals
     {
         public static float MinimumGrade = 0;
         public static float MaximumGrade = 100;
+        private string _name;
 
-        public GradeBook()
+        public string Name
         {
+            get
+            {
+                return _name.ToUpper();
+            }
+            set
+            {
+                if (!String.IsNullOrEmpty(value))
+                {
+                    _name = value;
+                }
+            }
+
+        }
+
+        public List<float> grades;
+
+        public GradeBook(string name = "There is no name")
+        {
+            Name = name;
             grades = new List<float>();
         }
         
@@ -42,8 +62,6 @@ namespace C_Sharp_fundamentals
 
         }
 
-        public string Name; 
-
-        public List<float> grades;
+        
     }
 }

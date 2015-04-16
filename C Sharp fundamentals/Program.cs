@@ -45,9 +45,8 @@ namespace C_Sharp_fundamentals
             book.AddGrade(75f);
 
             GradeStatistics stats = book.ComputeStatistics();
-
-            WriteBytes(stats.AverageGrade);
-            WriteNames("Jeremy", "test", "cool", "yeah");
+            book.Name = "";
+            WriteNames(book.Name);
 
             //Console.WriteLine(stats.AverageGrade);
             //Console.WriteLine(stats.HighestGrade);
@@ -55,8 +54,6 @@ namespace C_Sharp_fundamentals
 
 
             Console.ReadLine();
-
-
         }
 
 
