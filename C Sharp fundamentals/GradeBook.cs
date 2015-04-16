@@ -8,7 +8,7 @@ namespace C_Sharp_fundamentals
         public static float MinimumGrade = 0;
         public static float MaximumGrade = 100;
         private string _name;
-        public NameChangedDelegate NameChanged;
+        public event NameChangedDelegate NameChanged;
 
         public string Name
         {
@@ -25,7 +25,11 @@ namespace C_Sharp_fundamentals
 
                     if (NameChanged != null)
                     {
-                        NameChanged(oldValue, value);
+                        NameChangedEventArgs args = new NameChangedEventArgs();
+                        args.OldValue = oldValue;
+                        args.NewValue = value;
+                        
+                        NameChanged(this, args);
                     }            
                 }                
              

@@ -46,10 +46,9 @@ namespace C_Sharp_fundamentals
 
             GradeStatistics stats = book.ComputeStatistics();
             book.NameChanged += OnNameChanged;
-            book.NameChanged += OnNameChanged;
-            book.NameChanged += OnNameChanged;
-            book.NameChanged += OnNameChanged;
-            book.NameChanged += OnNameChanged2;
+          
+            //book.NameChanged = new NameChangedDelegate(onNameChanged);
+
 
 
             book.Name = "Jeremy's Book";
@@ -63,14 +62,9 @@ namespace C_Sharp_fundamentals
             Console.ReadLine();
         }
 
-        private static void OnNameChanged2(string oldValue, string newValue)
+        private static void OnNameChanged(object sender, NameChangedEventArgs args)
         {
-            Console.Write("****");
-        }
-
-        private static void OnNameChanged(string oldValue, string newValue)
-        {
-            Console.WriteLine("Name Changed from {0} to {1}", oldValue, newValue);
+            Console.WriteLine("Name Changed from {0} to {1}", args.OldValue, args.NewValue);
         }
 
         static void GiveBookAName(GradeBook book)

@@ -6,6 +6,10 @@ using System.Threading.Tasks;
 
 namespace C_Sharp_fundamentals
 {
-    public delegate void NameChangedDelegate(object sender, NameChangedEventArgs args);
-  
+    public class NameChangedEventArgs : EventArgs
+    {
+        public string OldValue { get; set; }
+        public string NewValue { get; set; }
+
+    }
 }
