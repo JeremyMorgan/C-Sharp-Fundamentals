@@ -20,7 +20,7 @@ namespace C_Sharp_fundamentals
             Console.WriteLine(stats.AverageGrade);
             Console.WriteLine(stats.HighestGrade);
             Console.WriteLine(stats.LowestGrade);
-
+            Console.WriteLine(stats.LetterGrade);
             Console.ReadLine();
         }
 
