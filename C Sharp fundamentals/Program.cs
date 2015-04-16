@@ -45,18 +45,33 @@ namespace C_Sharp_fundamentals
             book.AddGrade(75f);
 
             GradeStatistics stats = book.ComputeStatistics();
-            book.Name = "";
+            book.NameChanged += OnNameChanged;
+            book.NameChanged += OnNameChanged;
+            book.NameChanged += OnNameChanged;
+            book.NameChanged += OnNameChanged;
+            book.NameChanged += OnNameChanged2;
+
+
+            book.Name = "Jeremy's Book";
+
             WriteNames(book.Name);
 
             //Console.WriteLine(stats.AverageGrade);
             //Console.WriteLine(stats.HighestGrade);
             //Console.WriteLine(stats.LowestGrade);
 
-
             Console.ReadLine();
         }
 
+        private static void OnNameChanged2(string oldValue, string newValue)
+        {
+            Console.Write("****");
+        }
 
+        private static void OnNameChanged(string oldValue, string newValue)
+        {
+            Console.WriteLine("Name Changed from {0} to {1}", oldValue, newValue);
+        }
 
         static void GiveBookAName(GradeBook book)
         {
@@ -95,12 +110,6 @@ namespace C_Sharp_fundamentals
             grades[2] = 75f;
 
         }
-
-
-
-
-
-
 
         private static void PassByValueAndRef()
         {

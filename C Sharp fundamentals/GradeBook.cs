@@ -8,19 +8,27 @@ namespace C_Sharp_fundamentals
         public static float MinimumGrade = 0;
         public static float MaximumGrade = 100;
         private string _name;
+        public NameChangedDelegate NameChanged;
 
         public string Name
         {
             get
             {
-                return _name.ToUpper();
+                return _name;
             }
             set
             {
-                if (!String.IsNullOrEmpty(value))
+                if (_name != value)
                 {
+                    var oldValue = _name;
                     _name = value;
-                }
+
+                    if (NameChanged != null)
+                    {
+                        NameChanged(oldValue, value);
+                    }            
+                }                
+             
             }
 
         }
