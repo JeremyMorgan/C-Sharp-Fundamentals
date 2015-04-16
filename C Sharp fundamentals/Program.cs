@@ -6,56 +6,27 @@ namespace C_Sharp_fundamentals
     class Program
     {
 
-        static void GiveBookAName(GradeBook book)
-        {
-            book.Name = "The GradeBook";
-        }
-
-        static void IncrementNumber(ref int number)
-        {
-            number += 1;
-        }
-
-        private static void Immutable()
-        {
-      
-        }
-
-        private static void Arrays()
-        {
-            float[] grades;
-            grades = new float[3];
-
-            AddGrades(grades);
-
-            foreach (float grade in grades)
-            {
-                Console.WriteLine(grade);
-
-            }
-
-        }
-
-        private static void AddGrades(float[] grades)
-        {
-            grades[0] = 91f;
-            grades[1] = 89.1f;
-            grades[2] = 75f;
-
-        }
-
-
         static void Main(string[] args)
         {
 
-            
-            
-            
-            
+            GradeBook book = new GradeBook();
+            book.AddGrade(91f);
+            book.AddGrade(89.1f);
+            book.AddGrade(75f);
+
+            GradeStatistics stats = book.ComputeStatistics();
+
+
+
+            Console.WriteLine(stats.AverageGrade);
+            Console.WriteLine(stats.HighestGrade);
+            Console.WriteLine(stats.LowestGrade);
+
+
             //Arrays();
 
-            
-            
+
+
             /*
              * 
             const int numberOfStudents = 4;
@@ -136,6 +107,47 @@ namespace C_Sharp_fundamentals
 
 
         }
+
+        static void GiveBookAName(GradeBook book)
+        {
+            book.Name = "The GradeBook";
+        }
+
+        static void IncrementNumber(ref int number)
+        {
+            number += 1;
+        }
+
+        private static void Immutable()
+        {
+      
+        }
+
+        private static void Arrays()
+        {
+            float[] grades;
+            grades = new float[3];
+
+            AddGrades(grades);
+
+            foreach (float grade in grades)
+            {
+                Console.WriteLine(grade);
+
+            }
+
+        }
+
+        private static void AddGrades(float[] grades)
+        {
+            grades[0] = 91f;
+            grades[1] = 89.1f;
+            grades[2] = 75f;
+
+        }
+
+
+       
 
       
      
